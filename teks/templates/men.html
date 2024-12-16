@@ -1,0 +1,262 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEN FOOTWEAR</title><style>
+        .section1{
+            min-height: 20vh;
+            width:100%;
+            background-color: white; 
+            border: 2px solid black;
+            position: sticky;
+            top:0px;
+        }.header1{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .heading{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+        .header2{
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            padding-top: 10px;
+           
+            padding-left: 10px;
+        }
+        .header3{
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            
+            text-decoration: none;    
+        }.header5{
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            padding-top: 20px;
+            padding-right: 10px;
+           
+           
+            font: size 50px;
+
+        }
+        .img{
+            /* border: 2px solid; */
+            box-shadow: 2px 2px 5px ;
+            border-radius: 5px;
+            text-align: center;
+            height: 200px;
+            width:200px;
+            cursor: pointer;
+            transition: all 1s;
+            animation-name: body_image;
+
+        }
+       .img:hover{
+        transform: scale(1.1);
+       }
+        .section2{
+           
+           height: 290vh;
+           background-color: rgb(235, 211, 211);
+           padding-top: 30px;
+          
+        }
+       .parent{
+           display: flex;
+           height:100px;
+           
+
+        }
+       
+         
+       
+        #mahi{
+           
+           margin: 20px;
+           background-color: rgb(240, 223, 223);
+           height: 390px;
+           
+           box-shadow: 2px 5px 5px;
+           border-radius:5px ;
+           float: left;
+           width: 21%;
+           text-align:center;
+           padding: 5px;
+        }
+        h3{
+           text-shadow: 0px 0px 3px;
+           text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+    <section class="section1">
+        <nav >
+            <div class="div">
+                <div class="header1">
+                    <div>welcome to metro shoes</div>
+                    <div><b id="line">get 5% extra discount on prepaired order </b></div>
+                    <div>store locater</div>
+                </div>
+                <div class="heading">
+                    <div class="header2">
+                        <div class="header4"><img src="https://www.metroshoes.com/images/logo/main-logo.svg"></div>
+                        <div class="header3"><a href="C:\Users\user\OneDrive\Desktop\New folder (3)\project\project2.html" target="_blank"><h5>HOME</h5></a></div>
+                        <div class="header3"><a href="C:\Users\user\OneDrive\Desktop\New folder (3)\project\women.html" target="_blank"><h5>WOMEN</h5></a></div>
+                        <div class="header3"><a href="C:\Users\user\OneDrive\Desktop\New folder (3)\project\men.html" target="_blank"><H5>MEN</H5></a></div>
+                        <div class="header3"><a href="C:\Users\user\OneDrive\Desktop\New folder (3)\project\kids.html" target="_blank"><h5>KIDS</h5></a>
+                    </div>
+                        
+                       
+                </div>
+                    <div class="header5">
+                        <div calss="searching"><input type="text" placeholder="Search"></div>
+                        <div><img src=" static 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjzTpeNf7fzu0hnv7Zv3Zet_83xrsWUTnCA&s'" alt="img" height="30px" width="30px"></div>
+                        <div><img src="{% static 'cart_image.png' %}" alt="cart" height="30px" width="30px"></div>
+                        <div><img src="{% static 'lines_image.png' %}"  alt="" height="30px" width="30px"></div>
+                    </div>
+                
+                </div>
+
+            </div>
+        </nav>
+
+    </section>
+    <section class="section2">
+        <div class="manoj">
+            
+            <div calss="parent">
+                <div id="mahi">
+                    <img src="{% static 'men/img1.jpeg' %}" alt="Product 2" class="img">
+                    <h3>Addidas</h3>
+                  
+                    <p>women shoes</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">69% off</h1><del>699</del><b>300</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img2.jpeg' %}" alt="Product 1" class="img">
+                    <h3>BRUTON</h3>
+                    <p>women Formal Shoes</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">79% off</h1><del>999</del><b>204Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img3.jpeg' %}" alt="Product 3" class="img">
+                    <h3>Addidas</h3>
+                    <p>Men SFG 57 casual sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">15% off</h1><del>899</del><b>756Rs</b></p>
+                </div>
+             
+             
+                <div id="mahi">
+                    <img src="{% static 'men/img4.jpeg' %}" alt="Product 1" class="img">
+                    <h3>ZIYARAT COLLECTION</h3>
+                    <P>Women Bellis Sandal</P>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">70% off</h1><del>999</del><b>299Rs</b>
+                 
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img5.jpeg' %}" alt="Product 2" class="img">
+                    <h3>Leemon</h3>
+                    <p>Women Flats Sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">56% off</h1><del>499</del><b>214Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img6.jpeg' %}" alt="product 3" class="img">
+                    <h3>Bata</h3>
+                    <p>Women Heels sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">18% off</h1><del>899</del><b>756Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img7.jpeg' %}" alt="Product 1" class="img">
+                    <h3>BERSACHE</h3>
+                    <P>Women Flats Sandal</P>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">64% off</h1><del>999</del><b>299Rs</b>
+                 
+                </div>
+             
+                <div id="mahi">
+                    <img src="{% static 'men/img8.jpeg' %}" alt="Product 8" class="img">
+                    <h3>Leemon</h3>
+                    <p>Holly Wood Foot Wear</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">56% off</h1><del>499</del><b>214Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img9.jpeg' %}" alt="product 9"class='img'>
+                    <h3>Bata</h3>
+                    <p>Women party wear sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">50% off</h1><del>899</del><b>450Rs</b></p>
+                 
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img10.jpeg' %}" alt="Product 1" class="img">
+                    <h3>ZIYARAT COLLECTION</h3>
+                    <P>Women Bellis Sandal</P>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">70% off</h1><del>999</del><b>299Rs</b>
+                
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img11.jpeg' %}" alt="Product 2" class="img">
+                    <h3>Leemon</h3>
+                    <p>Women Flats Sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">56% off</h1><del>499</del><b>214Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img12.jpeg' %}" alt="product 3" class="img">
+                    <h3>Bata</h3>
+                    <p>Women Heels sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">18% off</h1><del>899</del><b>756Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img13.jpeg' %}" alt="Product 1" class="img">
+                    <h3>BERSACHE</h3>
+                    <P>Women Flats Sandal</P>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">64% off</h1><del>999</del><b>299Rs</b>
+                
+                </div>
+            
+                <div id="mahi">
+                    <img src="{% static 'men/img14.jpeg' %}" alt="Product 8" class="img">
+                    <h3>Leemon</h3>
+                    <p>Holly Wood Foot Wear</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">56% off</h1><del>499</del><b>214Rs</b></p>
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img15.jpeg' %}" alt="product 9"class='img'>
+                    <h3>Bata</h3>
+                    <p>Women party wear sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">50% off</h1><del>899</del><b>450Rs</b></p>
+                
+                </div>
+                <div id="mahi">
+                    <img src="{% static 'men/img16.jpeg' %}" alt="product 9"class='img'>
+                    <h3>Bata</h3>
+                    <p>Women party wear sandal</p>
+                    <p><h1 style="color: rgb(29, 216, 85);text-align: center;">50% off</h1><del>899</del><b>450Rs</b></p>
+                </div>
+            </div>
+        </div>
+             
+         
+
+    </section>
+    
+    
+</body>
+</html>
